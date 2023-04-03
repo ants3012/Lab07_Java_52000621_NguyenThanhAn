@@ -1,5 +1,6 @@
-package vn.edu.tdtu.lab7_2.model;
+package vn.edu.tdtu.lab7_5.model;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -22,6 +23,7 @@ public class Student {
     private int age;
     @NonNull
     private String email;
+    @Column(name = "ielts_score")
     @NonNull
     private double ieltsScore;
 
